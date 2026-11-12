@@ -9,146 +9,176 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    color: #24292e;
-    background: #fafafa;
+    color: #18181b;
+    background: #ffffff;
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
   }
   .topbar {
-    background: #1f3b73;
-    color: white;
-    padding: 14px 30px;
+    background: #fafafa;
+    border-bottom: 1px solid #e4e4e7;
+    color: #18181b;
+    padding: 14px 32px;
     position: sticky;
     top: 0;
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .topbar .topbar-brand {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #18181b;
   }
   .topbar a {
-    color: white;
+    color: #52525b;
     text-decoration: none;
-    font-size: 14px;
-    padding: 6px 14px;
-    border-radius: 5px;
-    transition: background 0.15s;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.12s, color 0.12s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
   }
-  .topbar a:hover { background: rgba(255,255,255,0.15); }
-  .topbar .back::before { content: '\2190 '; }
+  .topbar a:hover {
+    background: rgba(0,0,0,0.04);
+    color: #18181b;
+  }
+  .topbar .arrow {
+    font-size: 14px;
+  }
   .container {
-    max-width: 980px;
+    max-width: 880px;
     margin: 0 auto;
     padding: 40px 25px;
   }
   .cell {
-    margin-bottom: 25px;
-    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e7;
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
   }
   .cell-markdown {
+    padding: 24px 28px;
     background: white;
-    padding: 20px 25px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: none;
+    border-radius: 0;
   }
-  .cell-markdown h1 { color: #1f3b73; border-bottom: 2px solid #e8edf3; padding-bottom: 8px; }
-  .cell-markdown h2 { color: #1f3b73; border-bottom: 1px solid #e8edf3; padding-bottom: 6px; margin-top: 25px; }
-  .cell-markdown h3 { color: #2a4a8c; margin-top: 20px; }
-  .cell-markdown table { border-collapse: collapse; width: 100%; margin: 12px 0; }
-  .cell-markdown th { background: #1f3b73; color: white; padding: 8px 12px; text-align: left; }
-  .cell-markdown td { padding: 8px 12px; border-bottom: 1px solid #ddd; }
-  .cell-markdown tr:nth-child(even) { background: #f9f9f9; }
+  .cell-markdown h1 { color: #18181b; font-size: 28px; font-weight: 600; letter-spacing: -0.4px; margin-bottom: 12px; }
+  .cell-markdown h2 { color: #18181b; font-size: 22px; font-weight: 600; margin-top: 28px; margin-bottom: 12px; border-bottom: 1px solid #e4e4e7; padding-bottom: 8px; }
+  .cell-markdown h3 { color: #27272a; font-size: 17px; font-weight: 600; margin-top: 22px; margin-bottom: 8px; }
+  .cell-markdown h4 { color: #27272a; font-size: 15px; font-weight: 600; margin-top: 18px; margin-bottom: 8px; }
+  .cell-markdown p { color: #3f3f46; margin-bottom: 12px; }
+  .cell-markdown p:last-child { margin-bottom: 0; }
+  .cell-markdown table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 14px; }
+  .cell-markdown th { background: #fafafa; color: #18181b; font-weight: 600; padding: 8px 12px; text-align: left; border: 1px solid #e4e4e7; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .cell-markdown td { padding: 8px 12px; border: 1px solid #e4e4e7; color: #3f3f46; }
   .cell-markdown code {
-    background: #f4f4f4;
+    background: #f4f4f5;
     padding: 2px 6px;
     border-radius: 3px;
-    font-family: 'Consolas', 'Monaco', monospace;
+    font-family: "SF Mono", "Monaco", "Consolas", monospace;
     font-size: 13px;
-    color: #c7254e;
+    color: #18181b;
   }
   .cell-markdown pre {
-    background: #f4f4f4;
-    padding: 12px;
-    border-radius: 5px;
+    background: #fafafa;
+    padding: 14px 16px;
+    border-radius: 4px;
     overflow-x: auto;
-    border: 1px solid #e1e1e1;
+    border: 1px solid #e4e4e7;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
-  .cell-markdown pre code { background: none; color: #333; padding: 0; }
+  .cell-markdown pre code { background: none; color: #3f3f46; padding: 0; }
   .cell-markdown blockquote {
-    border-left: 4px solid #1f3b73;
-    padding: 10px 15px;
-    background: #f0f5ff;
-    margin: 10px 0;
-    color: #555;
+    border-left: 3px solid #d4d4d8;
+    padding: 8px 16px;
+    background: #fafafa;
+    margin: 12px 0;
+    color: #52525b;
+    font-size: 14px;
   }
   .cell-markdown .math-block {
-    background: #f9f9f9;
-    padding: 12px;
-    border-radius: 5px;
+    background: #fafafa;
+    padding: 14px;
+    border-radius: 4px;
     text-align: center;
-    font-family: 'Times New Roman', serif;
-    font-style: italic;
-    margin: 10px 0;
-    border: 1px solid #ddd;
+    font-family: "SF Mono", "Monaco", monospace;
+    font-size: 14px;
+    margin: 12px 0;
+    border: 1px solid #e4e4e7;
+    word-break: break-word;
   }
-  .cell-markdown ul, .cell-markdown ol { padding-left: 25px; }
-  .cell-markdown img { max-width: 100%; border-radius: 5px; }
+  .cell-markdown ul, .cell-markdown ol { padding-left: 24px; color: #3f3f46; }
+  .cell-markdown ul li, .cell-markdown ol li { margin-bottom: 6px; }
+  .cell-markdown img { max-width: 100%; height: auto; display: block; margin: 16px auto; border: 1px solid #e4e4e7; border-radius: 4px; }
+  .cell-markdown a { color: #18181b; text-decoration: underline; word-break: break-word; overflow-wrap: break-word; }
   .cell-code {
     background: white;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   }
   .cell-input, .cell-output {
     display: flex;
     align-items: flex-start;
   }
   .cell-prompt {
-    flex: 0 0 80px;
-    padding: 12px 8px;
-    color: #888;
-    font-family: 'Consolas', monospace;
-    font-size: 12px;
+    flex: 0 0 70px;
+    padding: 14px 10px;
+    color: #a1a1aa;
+    font-family: "SF Mono", "Monaco", monospace;
+    font-size: 11px;
     text-align: right;
-    background: #f9f9f9;
-    border-right: 1px solid #eee;
+    background: #fafafa;
+    border-right: 1px solid #e4e4e7;
+    user-select: none;
   }
-  .cell-code .cell-code-pre, .cell-output pre {
+  .cell-code-pre, .cell-output pre {
     margin: 0;
-    padding: 12px 16px;
-    font-family: 'Consolas', 'Monaco', monospace;
+    padding: 14px 16px;
+    font-family: "SF Mono", "Monaco", "Consolas", monospace;
     font-size: 13px;
     white-space: pre-wrap;
     word-wrap: break-word;
     flex: 1;
     overflow-x: auto;
+    line-height: 1.5;
   }
-  .cell-code-pre { background: #f6f8fa; color: #24292e; }
-  .cell-output { border-top: 1px solid #eee; background: #fffef7; }
-  .cell-output pre { background: #fffef7; color: #333; }
+  .cell-code-pre { background: #fafafa; color: #18181b; }
+  .cell-output { border-top: 1px solid #e4e4e7; background: #fffef7; }
+  .cell-output pre { background: #fffef7; color: #3f3f46; word-break: break-word; overflow-wrap: break-word; }
   .cell-output .output-error {
-    color: #c7254e;
-    background: #fdf2f2;
+    color: #b91c1c;
+    background: #fef2f2;
   }
   .cell-output .output-image {
     display: block;
-    margin: 10px auto;
+    margin: 12px auto;
     max-width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    height: auto;
+    border: 1px solid #e4e4e7;
+    border-radius: 4px;
   }
   footer {
     text-align: center;
-    color: #666;
-    font-size: 13px;
-    padding: 30px;
-    border-top: 1px solid #ddd;
-    background: white;
+    color: #a1a1aa;
+    font-size: 12px;
+    padding: 32px;
+    border-top: 1px solid #e4e4e7;
+    background: #fafafa;
+    margin-top: 40px;
   }
 </style>
 </head>
 <body>
   <div class="topbar">
-    <a href="index.html" class="back">&larr; Kembali ke Beranda</a>
-    <a href="index.html">🏠 Beranda</a>
+    <a href="index.html"><span class="arrow">&larr;</span> Kembali</a>
+    <span class="topbar-brand">Notebook 1 - Analisis Graf 5 Simpul dengan NetworkX</span>
   </div>
   <div class="container">
     <div class="cell cell-markdown"><h1>Analisis Graf Berarah dan Tak Berarah dengan NetworkX</h1>
@@ -823,7 +853,7 @@ mengikuti arah busur, sehingga nilainya bisa berbeda dengan graf tak berarah.
 <li>Fagi, G. <em>Clustering in complex directed networks</em>. Physical Review E, 76(2), 026107, 2007 (referensi rumus clustering coefficient untuk graf berarah yang dipakai NetworkX).</li></p></div>
   </div>
   <footer>
-    <p>Notebook 1 - Analisis Graf 5 Simpul dengan NetworkX &middot; Tugas Web Structure Mining &middot; &copy; 2026 haninhammoud01</p>
+    <p>Notebook 1 - Analisis Graf 5 Simpul dengan NetworkX &middot; Tugas Web Structure Mining &middot; haninhammoud01</p>
   </footer>
 </body>
 </html>
