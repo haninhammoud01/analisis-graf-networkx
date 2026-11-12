@@ -7811,7 +7811,7 @@ a.anchor-link {
 <p>Untuk masing-masing graf akan dihitung:</p>
 <ul>
 <li>Matriks Ketetanggaan (Adjacency Matrix)</li>
-<li>Derajat (Degree) tiap simpul — termasuk <em>in-degree</em> dan <em>out-degree</em> untuk graf berarah</li>
+<li>Derajat (Degree) tiap simpul termasuk <em>in-degree</em> dan <em>out-degree</em> untuk graf berarah</li>
 <li>Distribusi Derajat (Degree Distribution)</li>
 <li>Derajat Rata-rata (Average Degree)</li>
 <li>Kepadatan Graf (Graph Density)</li>
@@ -7820,14 +7820,14 @@ a.anchor-link {
 </ul>
 <h2 id="Referensi-PPT-Dosen">Referensi PPT Dosen<a class="anchor-link" href="#Referensi-PPT-Dosen">¶</a></h2><p>Materi pada notebook ini mengikuti konsep yang dibahas pada slide <strong>"Web Structure Mining"</strong> dari dosen, khususnya pada bagian:</p>
 <ul>
-<li><em>Mendeskripsikan Graf: Terminologi dan Metrik</em> — definisi graf, simpul, sisi berarah/tak berarah, matriks ketetanggaan, derajat, in-degree, out-degree.</li>
-<li><em>Distribusi Derajat &amp; Derajat Rata-rata</em> — rumus rata-rata derajat untuk graf berarah dan tak berarah.</li>
-<li><em>Kepadatan Graf</em> — rumus <code>L / L_maks</code> dengan <code>L_maks = N(N-1)</code> untuk graf berarah dan <code>L_maks = N(N-1)/2</code> untuk graf tak berarah.</li>
-<li><em>Koefisien Klasterisasi</em> — <code>C_i = 2 * k_i / (d_i * (d_i - 1))</code>, mengukur seberapa erat tetangga sebuah simpul saling terhubung.</li>
-<li><em>Lintasan &amp; Jalur Terpendek</em> — definisi lintasan, jarak, diameter, dan rata-rata panjang lintasan terpendek.</li>
+<li><em>Mendeskripsikan Graf: Terminologi dan Metrik</em> definisi graf, simpul, sisi berarah/tak berarah, matriks ketetanggaan, derajat, in-degree, out-degree.</li>
+<li><em>Distribusi Derajat &amp; Derajat Rata-rata</em> rumus rata-rata derajat untuk graf berarah dan tak berarah.</li>
+<li><em>Kepadatan Graf</em> rumus <code>L / L_maks</code> dengan <code>L_maks = N(N-1)</code> untuk graf berarah dan <code>L_maks = N(N-1)/2</code> untuk graf tak berarah.</li>
+<li><em>Koefisien Klasterisasi</em> <code>C_i = 2 * k_i / (d_i * (d_i - 1))</code>, mengukur seberapa erat tetangga sebuah simpul saling terhubung.</li>
+<li><em>Lintasan &amp; Jalur Terpendek</em> definisi lintasan, jarak, diameter, dan rata-rata panjang lintasan terpendek.</li>
 </ul>
 <blockquote>
-<p>Sumber: PPT <strong>"Web Structure Mining"</strong> — Bab <em>Mendeskripsikan Graf: Terminologi dan Metrik</em>.</p>
+<p>Sumber: PPT <strong>"Web Structure Mining"</strong> Bab <em>Mendeskripsikan Graf: Terminologi dan Metrik</em>.</p>
 </blockquote>
 </div>
 </div>
@@ -9295,13 +9295,13 @@ mengikuti arah busur, sehingga nilainya bisa berbeda dengan graf tak berarah.
 <h2 id="5.-Kesimpulan">5. Kesimpulan<a class="anchor-link" href="#5.-Kesimpulan">¶</a></h2><ol>
 <li><strong>Matriks Ketetanggaan</strong>: graf tak berarah menghasilkan matriks <strong>simetris</strong>, sedangkan graf berarah menghasilkan matriks yang <strong>umumnya tidak simetris</strong>.</li>
 <li><strong>Derajat</strong>: pada graf berarah, derajat dibagi menjadi <strong>in-degree</strong> dan <strong>out-degree</strong>. Total derajat = in-degree + out-degree.</li>
-<li><strong>Kepadatan</strong>: rumus berbeda — <code>L / (N(N-1)/2)</code> untuk tak berarah, <code>L / (N(N-1))</code> untuk berarah. Karena denominator lebih besar pada graf berarah, density graf berarah biasanya lebih kecil untuk jumlah sisi yang sama.</li>
+<li><strong>Kepadatan</strong>: rumus berbeda <code>L / (N(N-1)/2)</code> untuk tak berarah, <code>L / (N(N-1))</code> untuk berarah. Karena denominator lebih besar pada graf berarah, density graf berarah biasanya lebih kecil untuk jumlah sisi yang sama.</li>
 <li><strong>Lintasan Terpendek</strong>: pada graf berarah, jarak <code>i → j</code> tidak sama dengan <code>j → i</code>. Rata-rata lintasan terpendek pun biasanya lebih panjang pada graf berarah.</li>
 <li><strong>Koefisien Klasterisasi</strong>: mengukur seberapa erat tetangga sebuah simpul saling terhubung. NetworkX mendukung perhitungan ini untuk graf berarah maupun tak berarah.</li>
 </ol>
 <h2 id="6.-Referensi">6. Referensi<a class="anchor-link" href="#6.-Referensi">¶</a></h2><ol>
-<li>**PPT Dosen — <em>Web Structure Mining***. Bagian *Mendeskripsikan Graf: Terminologi dan Metrik</em> (definisi graf, matriks ketetanggaan, derajat, in-degree/out-degree, distribusi derajat, derajat rata-rata, kepadatan graf, koefisien klasterisasi, lintasan, jalur terpendek, diameter).</li>
-<li>**Bing Liu — *Web Data Mining***, Chapter 7 (referensi yang disebut pada PPT dosen untuk PageRank &amp; rank prestise).</li>
+<li>**PPT Dosen <em>Web Structure Mining***. Bagian *Mendeskripsikan Graf: Terminologi dan Metrik</em> (definisi graf, matriks ketetanggaan, derajat, in-degree/out-degree, distribusi derajat, derajat rata-rata, kepadatan graf, koefisien klasterisasi, lintasan, jalur terpendek, diameter).</li>
+<li>**Bing Liu *Web Data Mining***, Chapter 7 (referensi yang disebut pada PPT dosen untuk PageRank &amp; rank prestise).</li>
 <li>NetworkX Documentation: <a href="https://networkx.org/documentation/stable/">https://networkx.org/documentation/stable/</a></li>
 <li>Hagberg, Aric, Daniel Schult, and Pieter Swart. <em>Exploring Network Structure, Dynamics, and Function using NetworkX</em>. SciPy 2008.</li>
 <li>Fagi, G. <em>Clustering in complex directed networks</em>. Physical Review E, 76(2), 026107, 2007 (referensi rumus clustering coefficient untuk graf berarah yang dipakai NetworkX).</li>
