@@ -2,7 +2,7 @@
 
 # Analisis Graf Berarah & Tak Berarah dengan NetworkX
 
-### Tugas Web Structure Mining — Karakterisasi Graf 5 Simpul
+### Tugas Web Structure Mining Karakterisasi Graf 5 Simpul
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
 ![NetworkX](https://img.shields.io/badge/NetworkX-3.x-1f3b73?logo=python&logoColor=white)
@@ -57,7 +57,7 @@ Setiap graf dianalisis untuk metrik-metrik berikut:
 
 ## Konsep Teori (dari PPT Dosen)
 
-> Materi mengikuti PPT **"Web Structure Mining"** — Bab *Mendeskripsikan Graf: Terminologi dan Metrik*.
+> Materi mengikuti PPT **"Web Structure Mining"** Bab *Mendeskripsikan Graf: Terminologi dan Metrik*.
 
 ### Definisi Dasar
 - **Graf** `G = (V, E)` adalah pasangan terurut dari himpunan simpul `V` dan himpunan sisi `E`.
@@ -171,7 +171,7 @@ C_i = 2 * k_i / (d_i * (d_i - 1))
 | Derajat rata-rata | 2.4 | 2.8 |
 | Density | 0.6 | 0.35 |
 | Rata-rata lintasan terpendek | 1.4 | 1.9 |
-| Diameter | 2 | — |
+| Diameter | 2 | - |
 | Rata-rata koefisien klasterisasi | 0.333 | 0.383 |
 
 <br>
@@ -202,14 +202,14 @@ analisis-graf-networkx/
 
 ## Cara Menjalankan
 
-### Opsi A — Google Colab (paling gampang, tanpa install)
+### Opsi A Google Colab (paling gampang, tanpa install)
 
 1. Buka https://colab.research.google.com
 2. `File` > `Upload notebook`
 3. Pilih file `Analisis_Graf_NetworkX.ipynb`
 4. `Runtime` > `Run all`
 
-### Opsi B — Jupyter Notebook lokal
+### Opsi B Jupyter Notebook lokal
 
 ```bash
 # 1. Clone repo ini
@@ -235,7 +235,7 @@ Setelah mengaktifkan GitHub Pages (lihat [Cara Aktifkan GitHub Pages](#cara-akti
 https://haninhammoud01.github.io/analisis-graf-networkx/
 ```
 
-Versi HTML statis (`docs/index.html`) sudah aku convert dari notebook asli — semua output text, matriks, dan grafik tetap tampil tanpa perlu menjalankan kode. Cocok untuk dilihat dosen / orang lain yang belum install Python.
+Versi HTML statis (`docs/index.html`) sudah aku convert dari notebook asli semua output text, matriks, dan grafik tetap tampil tanpa perlu menjalankan kode. Cocok untuk dilihat dosen / orang lain yang belum install Python.
 
 <br>
 
@@ -272,7 +272,7 @@ Setelah repo ter-upload lengkap (termasuk folder `docs/`), aktifkan Pages supaya
    - **Source**: pilih **Deploy from a branch**
    - **Branch**: pilih `main`, folder: `/docs`
    - Klik **Save**
-4. Tunggu 1-2 menit, lalu refresh halaman — akan muncul link:
+4. Tunggu 1-2 menit, lalu refresh halaman akan muncul link:
    ```
    https://haninhammoud01.github.io/analisis-graf-networkx/
    ```
@@ -297,9 +297,9 @@ Semua library ini sudah pre-installed di Google Colab, jadi cukup buka notebook-
 
 ## Referensi
 
-1. **PPT Dosen — *Web Structure Mining***. Bab *Mendeskripsikan Graf: Terminologi dan Metrik* — definisi graf, matriks ketetanggaan, derajat (in-degree/out-degree), distribusi derajat, derajat rata-rata, kepadatan graf, koefisien klasterisasi, lintasan, jalur terpendek, diameter.
-2. **Bing Liu — *Web Data Mining***, Chapter 7 (referensi yang disebut di PPT untuk PageRank & rank prestise).
-3. NetworkX Documentation — https://networkx.org/documentation/stable/
+1. **PPT Dosen *Web Structure Mining***. Bab *Mendeskripsikan Graf: Terminologi dan Metrik* definisi graf, matriks ketetanggaan, derajat (in-degree/out-degree), distribusi derajat, derajat rata-rata, kepadatan graf, koefisien klasterisasi, lintasan, jalur terpendek, diameter.
+2. **Bing Liu *Web Data Mining***, Chapter 7 (referensi yang disebut di PPT untuk PageRank & rank prestise).
+3. NetworkX Documentation https://networkx.org/documentation/stable/
 4. Hagberg, Aric, Daniel Schult, and Pieter Swart. *Exploring Network Structure, Dynamics, and Function using NetworkX*. SciPy 2008.
 5. Fagiolo, G. *Clustering in complex directed networks*. Physical Review E, 76(2), 026107, 2007 (rumus clustering coefficient untuk graf berarah yang dipakai NetworkX).
 
